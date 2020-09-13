@@ -3,6 +3,7 @@ from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 import os 
 import random
+import base64
 from __init__ import app
 from base64 import decodebytes
 
@@ -33,4 +34,4 @@ def upload_image():
         return redirect('/')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host = '0.0.0.0', port = '5000')
