@@ -2,7 +2,7 @@
 FROM python:3
 
 # declare workdir
-WORKDIR /home/manhas/Desktop/Upload_your_image/Web-app-take-picture
+WORKDIR ./Web-app-take-picture
 
 # copy source from other dir to image
 COPY . .
